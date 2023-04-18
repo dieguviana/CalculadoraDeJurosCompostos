@@ -1,0 +1,26 @@
+﻿<Window x:Class="CalculadoraDeJurosCompostos.CalcularJuros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculadoraDeJurosCompostos"
+        mc:Ignorable="d"
+        Title="CalcularJuros" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btCalcular" Content="CALCULAR" Margin="0,199,0,0" Height="45" Width="130" Background="#FF37C1B6" FontSize="20" FontFamily="Comic Sans MS" Click="BtMontante_Click" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Label Content="Capital" Width="90" FontSize="24" FontFamily="Comic Sans MS" Margin="100,66,0,246" HorizontalAlignment="Left"/>
+        <Label Content="Taxa" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" Height="39" Width="70" FontSize="24" FontFamily="Comic Sans MS"/>
+        <Label Content="Tempo" HorizontalAlignment="Left" Margin="598,67,0,0" VerticalAlignment="Top" Height="39" Width="90" FontSize="24" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="tbCapital" HorizontalAlignment="Left" Margin="50,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="34" FontSize="20"/>
+        <TextBox x:Name="tbTaxa" HorizontalAlignment="Center" Margin="0,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="34" FontSize="20"/>
+        <TextBox x:Name="tbTempo" HorizontalAlignment="Left" Margin="548,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="34" FontSize="20"/>
+        <Label Content="Montante" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" Height="39" Width="120" FontSize="24" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="tbMontante" HorizontalAlignment="Center" Margin="0,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Height="44" FontSize="20"/>
+        <Label x:Name="titulo" Content="CALCULADORA DE JUROS" HorizontalAlignment="Center" Height="53" Margin="0,10,0,0" VerticalAlignment="Top" Width="384" FontSize="30" FontWeight="Bold" RenderTransformOrigin="0.501,1.491"/>
+        <Label Content="Digite um valor em reais" HorizontalAlignment="Left" Height="24" Margin="76,162,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Digite a porcentagem cobrada ao mês" HorizontalAlignment="Center" Height="26" Margin="0,162,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label Content="Digite a quantidade de meses" HorizontalAlignment="Left" Height="26" Margin="558,162,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Valor dado em reais" HorizontalAlignment="Center" Height="26" Margin="0,346,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
